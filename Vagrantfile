@@ -2,9 +2,11 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-
-  config.vm.box = "bento/centos-6.7"
-  config.vm.box_url = "https://atlas.hashicorp.com/bento/boxes/centos-6.7/versions/2.2.7/providers/virtualbox.box"
+  
+  # bento Pre-built Boxes ( https://github.com/chef/bento )
+  # Docker v1.8 から RHEL/CentOS6 はサポート外
+  config.vm.box = "bento/centos-7.3"
+  config.vm.box_url = "https://atlas.hashicorp.com/bento/boxes/centos-7.3/versions/2.3.2/providers/virtualbox.box"
 
   config.vm.define "master" do |master|
     # 固定IP
