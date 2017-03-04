@@ -20,7 +20,7 @@
 * もろもろ調整後は ディレクトリ中で vagrant up
 
 ```
-$ git clone https://github.com/0xmks/vagrant_base.git
+$ git clone https://github.com/0xmks/vagrant_base_docker.git
 $ cd vagrant_base
 $ vagrant up
 $ vagrant ssh master
@@ -29,3 +29,13 @@ $ vagrant ssh master
 # Vagrantfile設定方法参考
 * [Vagrant Documentation] ( https://www.vagrantup.com/docs/ )
 
+# あると便利なVagrant plugin
+* sahara ( https://github.com/jedi4ever/sahara )
+```
+$ vagrant plugin install sahara
+```
+
+* vagrant-cachier ( https://github.com/fgrehm/vagrant-cachier )
+```
+$ vagrant plugin install vagrant-cachier
+```
